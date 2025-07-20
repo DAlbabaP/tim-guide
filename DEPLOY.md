@@ -1,4 +1,4 @@
-# Инструкции по деплою на GitHub Pages
+git remote add origin https://github.com/DAlbabaP/tim-guide.git# Инструкции по деплою на GitHub Pages
 
 ## 🚀 Быстрый старт
 
