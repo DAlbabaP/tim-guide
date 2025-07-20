@@ -1,6 +1,6 @@
 import { HeroBanner } from "@/components/layout/hero-banner";
-import { SearchBar } from "@/components/search/search-bar";
 import { SectionCard } from "@/components/cards/section-card";
+import { UniversityStats, ImportantDates, ApplicantTimeline } from "@/components/home";
 
 export default function HomePage() {
   const sections = [
@@ -49,31 +49,99 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="space-y-24">
+    <div className="space-y-0">
+      {/* Hero Banner */}
       <HeroBanner />
 
-      {/* Quick Search */}
-      <section className="container mx-auto px-4">
-        <h2 className="font-heading text-3xl md:text-4xl text-dark mb-8">Быстрый поиск</h2>
-        <SearchBar />
-      </section>
+      {/* University Statistics */}
+      <UniversityStats />
 
-      {/* Sections */}
-      <section className="container mx-auto px-4 pb-24">
-        <h2 className="font-heading text-3xl md:text-4xl text-dark mb-8">Основные разделы</h2>
+      {/* Important Dates */}
+      <ImportantDates />
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {sections.map((section) => (
-            <SectionCard
-              key={section.href}
-              href={section.href}
-              title={section.title}
-              description={section.description}
-              iconKey={section.iconKey}
-            />
-          ))}
+      {/* Main Sections */}
+      <section className="py-20 bg-gradient-secondary">
+        <div className="container mx-auto px-4">
+          <h2 className="font-heading text-3xl md:text-4xl text-dark mb-8 text-center">
+            Основные разделы гайда
+          </h2>
+
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 items-stretch">
+            {/* Поступление - занимает 2 ячейки на средних и больших экранах */}
+            <div className="col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-2">
+              <SectionCard
+                href="/admission"
+                title="Поступление"
+                description="Подача документов, конкурсный отбор, зачисление и адаптация"
+                iconKey="admission"
+              />
+            </div>
+            
+            {/* Учёба */}
+            <div className="col-span-1">
+              <SectionCard
+                href="/study"
+                title="Учёба"
+                description="Информационные сервисы, ВУЦ, практики, библиотека и другое"
+                iconKey="study"
+              />
+            </div>
+            
+            {/* Кампус */}
+            <div className="col-span-1">
+              <SectionCard
+                href="/campus"
+                title="Кампус"
+                description="Общежитие, инфраструктура и интерактивная карта"
+                iconKey="campus"
+              />
+            </div>
+            
+            {/* Организации - занимает 2 ячейки на средних и больших экранах */}
+            <div className="col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-2">
+              <SectionCard
+                href="/organizations"
+                title="Организации"
+                description="Студенческие объединения, творческие студии, спортивные секции"
+                iconKey="organizations"
+              />
+            </div>
+            
+            {/* Поддержка и стипендии */}
+            <div className="col-span-1">
+              <SectionCard
+                href="/support"
+                title="Поддержка и стипендии"
+                description="Финансовая поддержка, стипендии, гранты, справки"
+                iconKey="support"
+              />
+            </div>
+            
+            {/* Контакты */}
+            <div className="col-span-1">
+              <SectionCard
+                href="/contacts"
+                title="Контакты"
+                description="Контакты институтов, подразделений, кафедр, сотрудников"
+                iconKey="contacts"
+              />
+            </div>
+            
+            {/* FAQ */}
+            <div className="col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-4 xl:col-span-4">
+              <SectionCard
+                href="/faq"
+                title="FAQ"
+                description="Ответы на частые вопросы и форма обратной связи"
+                iconKey="faq"
+              />
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Applicant Timeline */}
+      <ApplicantTimeline />
     </div>
   );
 } 

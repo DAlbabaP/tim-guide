@@ -252,8 +252,8 @@ export const SectionCard: React.FC<SectionCardProps> = ({
   const cardTags = tags || (iconKey && tagMap[iconKey]) || [];
 
   const inner = (
-    <Card variant="elevated" className={cn("group relative overflow-hidden h-full", className)}>
-      <CardContent className="p-6">
+    <Card variant="elevated" className={cn("group relative overflow-hidden h-full flex flex-col", className)}>
+      <CardContent className="p-6 flex flex-col h-full">
         {/* Декоративный фон для иконки */}
         {cardIcon && (
           <div className="relative mb-4">
@@ -272,7 +272,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
 
         {/* Описание */}
         {description && (
-          <p className="text-sm text-gray mb-6 flex-1 leading-relaxed">
+          <p className="text-sm text-gray mb-6 leading-relaxed flex-1">
             {description}
           </p>
         )}
@@ -292,7 +292,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
         )}
 
         {/* Индикатор действия */}
-        <div className="mt-auto flex items-center justify-between">
+        <div className="flex items-center justify-between mt-auto">
           <span className="text-sm font-medium text-primary group-hover:underline">
             Подробнее
           </span>
