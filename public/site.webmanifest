@@ -1,0 +1,30 @@
+{
+  "name": "Справочник абитуриента РГАУ-МСХА",
+  "short_name": "РГАУ-МСХА Гайд",
+  "description": "Полный справочник для абитуриентов и студентов Университета имени К.А. Тимирязева",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2F5E2F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "ru",
+  "dir": "ltr"
+} 
