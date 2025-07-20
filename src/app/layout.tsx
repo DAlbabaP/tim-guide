@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://timguide.ru'),
+  metadataBase: new URL('https://dalbabap.github.io'),
   alternates: {
     canonical: '/',
   },
@@ -66,11 +66,11 @@ export default function RootLayout({
   return (
     <html lang="ru" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="icon" href="/tim-guide/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/tim-guide/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/tim-guide/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/tim-guide/favicon-16x16.png" />
+        <link rel="manifest" href="/tim-guide/site.webmanifest" />
         <meta name="theme-color" content="#3d7648" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
