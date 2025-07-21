@@ -2,7 +2,7 @@
 
 import { OrganizationCard } from './organization-card';
 import { Chip } from '@/components/ui/chip';
-import { organizations } from '@/data/organizations';
+import { organizations } from '@/data/student-life';
 import { useState } from 'react';
 
 const catVariant = {

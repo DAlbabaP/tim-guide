@@ -1,4 +1,4 @@
-import { organizations } from '@/data/organizations'
+import { organizations } from '@/data/student-life'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { cn } from '@/utils/cn'

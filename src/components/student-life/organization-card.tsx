@@ -125,7 +125,7 @@ export function OrganizationCard({
 
   return (
     <FadeIn>
-      <Link href={`/organizations/${slug}`}>
+      <Link href={`/student-life/${slug}`}>
         {inner}
       </Link>
     </FadeIn>

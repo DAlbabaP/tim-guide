@@ -103,36 +103,46 @@ export const mainNavigation: NavigationItem[] = [
     ]
   },
   {
-    title: 'Организации',
-    href: '/organizations',
-    description: 'Студенческие объединения и активности',
+    title: 'Студенческая жизнь',
+    href: '/student-life',
+    description: 'Объединения, активности и мероприятия студентов',
     children: [
       {
         title: 'Студенческие организации',
-        href: '/organizations/student',
+        href: '/student-life/student',
         description: 'Активные объединения'
       },
       {
         title: 'Творческие студии',
-        href: '/organizations/creative',
+        href: '/student-life/creative',
         description: 'Творческие коллективы'
       },
       {
         title: 'Спортивные секции',
-        href: '/organizations/sports',
+        href: '/student-life/sports',
         description: 'Спортивные клубы'
       },
       {
-        title: 'Культорги институтов',
-        href: '/organizations/culture',
-        description: 'Культурные мероприятия'
+        title: 'Культорги',
+        href: '/student-life/culture',
+        description: 'Страница культоргов институтов',
       },
       {
-        title: 'Спорторги институтов',
-        href: '/organizations/sport-orgs',
-        description: 'Спортивные мероприятия'
+        title: 'Спорторги',
+        href: '/student-life/sport-orgs',
+        description: 'Страница спорторгов институтов',
+      },
+      {
+        title: 'Мероприятия',
+        href: '/student-life/events',
+        description: 'Календарь и анонсы событий'
       }
     ]
+  },
+  {
+    title: 'Наука',
+    href: '/science',
+    description: 'Научная деятельность, проекты и инициативы'
   },
   {
     title: 'Поддержка и стипендии',

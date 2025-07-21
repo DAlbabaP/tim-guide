@@ -72,6 +72,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'sports': <Trophy className="w-8 h-8" />,
   'culture': <Heart className="w-8 h-8" />,
   'sport-orgs': <Trophy className="w-8 h-8" />,
+  'events': <Calendar className="w-8 h-8" />,
   
   // Поддержка
   'academic-scholarship': <Award className="w-8 h-8" />,
@@ -136,6 +137,7 @@ const tagMap: Record<string, string[]> = {
   'sports': ['Спорт', 'Здоровье', 'Команда'],
   'culture': ['Культура', 'Мероприятия', 'Традиции'],
   'sport-orgs': ['Спорторги', 'Соревнования', 'Организация'],
+  'events': ['Мероприятия', 'Календарь', 'Анонсы'],
   
   // Поддержка
   'academic-scholarship': ['Успеваемость', 'Финансы', 'Поддержка'],
@@ -200,6 +202,7 @@ const iconColors: Record<string, string> = {
   'sports': 'text-green-500',
   'culture': 'text-pink-500',
   'sport-orgs': 'text-green-600',
+  'events': 'text-indigo-500',
   
   // Поддержка
   'academic-scholarship': 'text-green-500',
