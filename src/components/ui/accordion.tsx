@@ -29,6 +29,10 @@ const AccordionContext = React.createContext<{
   toggleItem: (id: string) => void;
 } | null>(null);
 
+const AccordionItemContext = React.createContext<{
+  itemId: string;
+} | null>(null);
+
 export const Accordion: React.FC<AccordionProps> = ({ children, className }) => {
   const [openItems, setOpenItems] = React.useState<Set<string>>(new Set());
 
@@ -54,25 +58,29 @@ export const Accordion: React.FC<AccordionProps> = ({ children, className }) => 
 };
 
 export const AccordionItem: React.FC<AccordionItemProps> = ({ children, className }) => {
+  const [itemId] = React.useState(() => Math.random().toString(36).substr(2, 9));
+
   return (
-    <div className={cn('border rounded-lg', className)}>
-      {children}
-    </div>
+    <AccordionItemContext.Provider value={{ itemId }}>
+      <div className={cn('border rounded-lg', className)}>
+        {children}
+      </div>
+    </AccordionItemContext.Provider>
   );
 };
 
 export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({ children, className }) => {
   const context = React.useContext(AccordionContext);
-  const [id] = React.useState(() => Math.random().toString(36).substr(2, 9));
-  const isOpen = context?.openItems.has(id) ?? false;
+  const itemContext = React.useContext(AccordionItemContext);
+  const isOpen = context?.openItems.has(itemContext?.itemId ?? '') ?? false;
 
-  if (!context) {
-    throw new Error('AccordionTrigger must be used within an Accordion');
+  if (!context || !itemContext) {
+    throw new Error('AccordionTrigger must be used within an Accordion and AccordionItem');
   }
 
   return (
     <button
-      onClick={() => context.toggleItem(id)}
+      onClick={() => context.toggleItem(itemContext.itemId)}
       className={cn(
         'flex w-full items-center justify-between p-4 text-left font-medium transition-all hover:bg-gray-50',
         className
@@ -92,18 +100,18 @@ export const AccordionTrigger: React.FC<AccordionTriggerProps> = ({ children, cl
 
 export const AccordionContent: React.FC<AccordionContentProps> = ({ children, className }) => {
   const context = React.useContext(AccordionContext);
-  const [id] = React.useState(() => Math.random().toString(36).substr(2, 9));
-  const isOpen = context?.openItems.has(id) ?? false;
+  const itemContext = React.useContext(AccordionItemContext);
+  const isOpen = context?.openItems.has(itemContext?.itemId ?? '') ?? false;
 
-  if (!context) {
-    throw new Error('AccordionContent must be used within an Accordion');
+  if (!context || !itemContext) {
+    throw new Error('AccordionContent must be used within an Accordion and AccordionItem');
   }
 
   return (
     <div
       className={cn(
-        'overflow-hidden transition-all duration-200',
-        isOpen ? 'max-h-96' : 'max-h-0'
+        'overflow-hidden transition-all duration-300',
+        isOpen ? 'max-h-[2000px]' : 'max-h-0'
       )}
     >
       <div className={cn('p-4 pt-0', className)}>
