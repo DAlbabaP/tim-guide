@@ -40,7 +40,7 @@ export default function MilitaryCenterPage() {
               {/* Реальное фото военного учебного центра */}
               <div className="aspect-video rounded-lg overflow-hidden mb-4 shadow-sm">
                 <img
-                  src="/images/military-center/center.jpg"
+                  src="/tim-guide/images/military-center/center.jpg"
                   alt="Военный учебный центр РГАУ-МСХА"
                   className="object-cover w-full h-full"
                 />
@@ -103,7 +103,7 @@ export default function MilitaryCenterPage() {
           <FadeIn className="flex-1 min-h-0">
             <div className="flex-1 min-h-0 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
               <img
-                src="/images/military-center/admission.jpg"
+                src="/tim-guide/images/military-center/admission.jpg"
                 alt="Поступление / Отбор"
                 className="object-cover w-full h-full"
               />
@@ -439,7 +439,7 @@ export default function MilitaryCenterPage() {
                   <p className="text-sm text-gray-600 mb-4">Таблица с нормативами по физической подготовке для поступающих в ВУЦ</p>
                 </div>
                 <a 
-                  href="/documents/military-center/normativy.pdf" 
+                  href="/tim-guide/documents/military-center/normativy.pdf" 
                   download
                   className="mt-auto inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
                 >
@@ -454,7 +454,7 @@ export default function MilitaryCenterPage() {
                   <p className="text-sm text-gray-600 mb-4">Подробное описание всех этапов прохождения отбора в ВУЦ</p>
                 </div>
                 <a 
-                  href="/documents/military-center/etapy-otbora.pdf" 
+                  href="/tim-guide/documents/military-center/etapy-otbora.pdf" 
                   download
                   className="mt-auto inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
                 >
@@ -469,7 +469,7 @@ export default function MilitaryCenterPage() {
                   <p className="text-sm text-gray-600 mb-4">Бланк для заполнения автобиографии при поступлении в ВУЦ</p>
                 </div>
                 <a 
-                  href="/documents/military-center/avtobiografiya-shablon.pdf" 
+                  href="/tim-guide/documents/military-center/avtobiografiya-shablon.pdf" 
                   download
                   className="mt-auto inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
                 >
@@ -494,10 +494,10 @@ export default function MilitaryCenterPage() {
           <CardContent>
             <PhotoGallery
               photos={[
-                { src: '/images/military-center/photo1.jpg', alt: 'Учебный процесс 1' },
-                { src: '/images/military-center/photo2.jpg', alt: 'Учебный процесс 2' },
-                { src: '/images/military-center/photo3.jpg', alt: 'Учебный процесс 3' },
-                { src: '/images/military-center/photo4.jpg', alt: 'Учебный процесс 4' },
+                { src: '/tim-guide/images/military-center/photo1.jpg', alt: 'Учебный процесс 1' },
+                { src: '/tim-guide/images/military-center/photo2.jpg', alt: 'Учебный процесс 2' },
+                { src: '/tim-guide/images/military-center/photo3.jpg', alt: 'Учебный процесс 3' },
+                { src: '/tim-guide/images/military-center/photo4.jpg', alt: 'Учебный процесс 4' },
               ]}
             />
           </CardContent>
