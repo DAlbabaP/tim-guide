@@ -27,7 +27,7 @@ export const HeroBanner = () => {
           {/* Hero Image */}
           <div className="relative aspect-square w-full rounded-4xl overflow-hidden shadow-strong">
             <Image
-              src="/images/head_photo.jpg"
+              src="/tim-guide/images/head_photo.jpg"
               alt="РГАУ-МСХА - главный корпус университета"
               fill
               className="object-cover"

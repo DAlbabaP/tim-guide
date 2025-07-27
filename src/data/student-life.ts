@@ -45,14 +45,14 @@ export const organizations: OrganizationDetails[] = [
       { platform: 'ВКонтакте', url: '#' },
       { platform: 'Telegram', url: '#' },
     ],
-    banner: '/tim-guide/images/organizations/spk/banner1.png',
-    photo: '/tim-guide/images/organizations/spk/leader.jpg',
-    logo: '/tim-guide/images/organizations/spk/logo.png',
+    banner: '/tim-guide/images/student-life/spk/banner1.png',
+    photo: '/tim-guide/images/student-life/spk/leader.jpg',
+    logo: '/tim-guide/images/student-life/spk/logo.png',
     isFeatured: true,
     gallery: [
-      '/tim-guide/images/organizations/spk/photo1.jpg',
-      '/tim-guide/images/organizations/spk/photo2.jpg',
-      '/tim-guide/images/organizations/spk/photo3.jpg',
+      '/tim-guide/images/student-life/spk/photo1.jpg',
+      '/tim-guide/images/student-life/spk/photo2.jpg',
+      '/tim-guide/images/student-life/spk/photo3.jpg',
     ],
     category: 'student',
   },
@@ -91,13 +91,13 @@ export const organizations: OrganizationDetails[] = [
     ],
 
     /* изображения */
-    banner:  '/tim-guide/images/organizations/cybertimka/banner1.jpg',
-    photo:   '/tim-guide/images/organizations/cybertimka/leader.jpg',
-    logo:    '/tim-guide/images/organizations/cybertimka/logo.jpg',
+    banner:  '/images/student-life/cybertimka/banner1.jpg',
+    photo:   '/images/student-life/cybertimka/leader.jpg',
+    logo:    '/images/student-life/cybertimka/logo.jpg',
     gallery: [
-      '/tim-guide/images/organizations/cybertimka/photo1.jpg',
-      '/tim-guide/images/organizations/cybertimka/photo2.jpg',
-      '/tim-guide/images/organizations/cybertimka/photo3.jpg',
+      '/images/student-life/cybertimka/photo1.jpg',
+      '/images/student-life/cybertimka/photo2.jpg',
+      '/images/student-life/cybertimka/photo3.jpg',
     ],
 
     /* категория (для фильтров в будущем) */
