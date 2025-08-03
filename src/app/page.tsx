@@ -23,9 +23,9 @@ export default function HomePage() {
       iconKey: "campus",
     },
     {
-      title: "Организации",
+      title: "Студенческая жизнь",
       description: "Студенческие объединения, творческие студии, спортивные секции",
-      href: "/organizations",
+      href: "/student-life",
       iconKey: "organizations",
     },
     {
@@ -97,11 +97,11 @@ export default function HomePage() {
               />
             </div>
             
-            {/* Организации - занимает 2 ячейки на средних и больших экранах */}
+            {/* Студенческая жизнь - занимает 2 ячейки на средних и больших экранах */}
             <div className="col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-2">
               <SectionCard
-                href="/organizations"
-                title="Организации"
+                href="/student-life"
+                title="Студенческая жизнь"
                 description="Студенческие объединения, творческие студии, спортивные секции"
                 iconKey="organizations"
               />
