@@ -120,7 +120,7 @@ export const mainNavigation: NavigationItem[] = [
       {
         title: 'Спортивные секции',
         href: '/student-life/sports',
-        description: 'Спортивные клубы'
+        description: 'Спортивные секции и команды'
       },
       {
         title: 'Культорги',
