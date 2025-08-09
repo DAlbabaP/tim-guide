@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function MilitaryCenterPage() {
   return (
-    <div className="container mx-auto px-4 py-12 space-y-8">
+    <div className="container mx-auto px-4 py-8 md:py-12 space-y-6 md:space-y-8">
       {/* Заголовок */}
       <header className="space-y-4">
         <div className="flex items-center gap-4">
@@ -27,7 +27,7 @@ export default function MilitaryCenterPage() {
       </header>
 
       {/* Основная информация */}
-      <div className="grid gap-6 lg:grid-cols-2 auto-rows-fr">
+      <div className="grid gap-4 md:gap-6 lg:grid-cols-2 auto-rows-fr">
         <FadeIn className="h-full">
           <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
             <CardHeader>
@@ -36,9 +36,9 @@ export default function MilitaryCenterPage() {
                 Общая информация
               </h3>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-3 md:space-y-4">
               {/* Реальное фото военного учебного центра */}
-              <div className="aspect-video rounded-lg overflow-hidden mb-4 shadow-sm">
+              <div className="aspect-video rounded-lg overflow-hidden mb-3 md:mb-4 shadow-sm">
                 <img
                   src="/tim-guide/images/military-center/center.jpg"
                   alt="Военный учебный центр РГАУ-МСХА"
@@ -62,7 +62,7 @@ export default function MilitaryCenterPage() {
             </CardContent>
           </Card>
         </FadeIn>
-        <div className="flex flex-col gap-6 h-full">
+        <div className="flex flex-col gap-4 md:gap-6 h-full">
           {/* Сроки отбора */}
           <FadeIn>
             <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -72,8 +72,8 @@ export default function MilitaryCenterPage() {
                   Сроки отбора
                 </h3>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="space-y-3">
+              <CardContent className="space-y-3 md:space-y-4">
+                <div className="space-y-2 md:space-y-3">
                   <div className="flex items-center gap-2 p-2 rounded-lg">
                     <Clock className="w-4 h-4 text-blue-500" />
                     <span className="font-medium">Февраль-март</span>
@@ -113,7 +113,7 @@ export default function MilitaryCenterPage() {
       </div>
 
       {/* Важная информация и Контакты */}
-      <div className="grid gap-6 lg:grid-cols-2 auto-rows-fr">
+      <div className="grid gap-4 md:gap-6 lg:grid-cols-2 auto-rows-fr">
         <FadeIn className="h-full">
           <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
             <CardHeader>
@@ -122,7 +122,7 @@ export default function MilitaryCenterPage() {
                 Важная информация
               </h3>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-3 md:space-y-4">
               <p className="text-sm text-gray leading-relaxed">
                 Для получения актуальной информации рекомендуется проверять группу в Telegram по адресу{' '}
                 <a 
@@ -154,7 +154,7 @@ export default function MilitaryCenterPage() {
                 Контакты
               </h3>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-3 md:space-y-4">
               <div className="space-y-3">
                 <div className="flex items-center gap-3 hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200">
                   <Phone className="w-4 h-4 text-gray-500" />
@@ -178,7 +178,7 @@ export default function MilitaryCenterPage() {
                     href="https://t.me/vuc_rgay_official" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm hover:scale-105 transition-all duration-200"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm transition-colors duration-200"
                   >
                     <span>📱</span>
                     <span>Telegram канал ВУЦ</span>
@@ -200,7 +200,7 @@ export default function MilitaryCenterPage() {
             </h3>
           </CardHeader>
           <CardContent>
-            <Accordion className="w-full space-y-4">
+            <Accordion className="w-full space-y-3 md:space-y-4">
               {/* Этап 1 */}
               <AccordionItem className="border rounded-xl overflow-hidden hover:shadow-md transition-all duration-300 hover:-translate-y-1">
                 <AccordionTrigger className="px-6 py-4 hover:bg-blue-50 transition-colors group">
@@ -208,11 +208,11 @@ export default function MilitaryCenterPage() {
                     <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <span className="text-blue-600 font-bold text-sm">1</span>
                     </div>
-                    <span className="font-semibold text-left">I ЭТАП - В ВОЕННОМ УЧЕБНОМ ЦЕНТРЕ</span>
+                    <span className="font-semibold text-left text-sm md:text-base">I ЭТАП - В ВОЕННОМ УЧЕБНОМ ЦЕНТРЕ</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
-                  <div className="space-y-4">
+                  <div className="space-y-3 md:space-y-4">
                     <div className="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors duration-300">
                       <h5 className="font-semibold mb-3 text-blue-800 flex items-center gap-2">
                         <CheckCircle className="w-4 h-4" />
@@ -278,11 +278,11 @@ export default function MilitaryCenterPage() {
                     <div className="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <span className="text-green-600 font-bold text-sm">2</span>
                     </div>
-                    <span className="font-semibold text-left">II ЭТАП - МЕДИЦИНСКОЕ ОБСЛЕДОВАНИЕ</span>
+                    <span className="font-semibold text-left text-sm md:text-base">II ЭТАП - МЕДИЦИНСКОЕ ОБСЛЕДОВАНИЕ</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
-                  <div className="space-y-4">
+                  <div className="space-y-3 md:space-y-4">
                     <div className="bg-green-50 p-4 rounded-lg hover:bg-green-100 transition-colors duration-300">
                       <h5 className="font-semibold mb-3 text-green-800 flex items-center gap-2">
                         <Stethoscope className="w-4 h-4" />
@@ -329,11 +329,11 @@ export default function MilitaryCenterPage() {
                     <div className="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <span className="text-purple-600 font-bold text-sm">3</span>
                     </div>
-                    <span className="font-semibold text-left">III ЭТАП - ПРЕДОСТАВЛЕНИЕ РЕЗУЛЬТАТОВ</span>
+                    <span className="font-semibold text-left text-sm md:text-base">III ЭТАП - ПРЕДОСТАВЛЕНИЕ РЕЗУЛЬТАТОВ</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
-                  <div className="space-y-4">
+                  <div className="space-y-3 md:space-y-4">
                     <div className="bg-purple-50 p-4 rounded-lg hover:bg-purple-100 transition-colors duration-300">
                       <h5 className="font-semibold mb-3 text-purple-800 flex items-center gap-2">
                         <ClipboardCheck className="w-4 h-4" />
@@ -375,11 +375,11 @@ export default function MilitaryCenterPage() {
                     <div className="w-8 h-8 rounded-full bg-orange-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <span className="text-orange-600 font-bold text-sm">4</span>
                     </div>
-                    <span className="font-semibold text-left">IV ЭТАП - ФИЗИЧЕСКИЕ НОРМАТИВЫ</span>
+                    <span className="font-semibold text-left text-sm md:text-base">IV ЭТАП - ФИЗИЧЕСКИЕ НОРМАТИВЫ</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4">
-                  <div className="space-y-4">
+                  <div className="space-y-3 md:space-y-4">
                     <div className="bg-orange-50 p-4 rounded-lg hover:bg-orange-100 transition-colors duration-300">
                       <h5 className="font-semibold mb-3 text-orange-800 flex items-center gap-2">
                         <Award className="w-4 h-4" />
