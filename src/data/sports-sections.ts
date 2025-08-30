@@ -30,15 +30,22 @@ export const sportsSections: SportsSectionDetails[] = [
     coachName: 'Тарасенко Виталий Николаевич',
     coachTitle: 'НУЖНО ВПИСАТЬ',
     coachQuote: 'НУЖНО ВПИСАТЬ',
-    tournaments: [],
-    awards: [],
-    requirements: ['НУЖНО ВПИСАТЬ'],
+    tournaments: [
+      { title: 'НУЖНО ВПИСАТЬ', description: 'НУЖНО ВПИСАТЬ', year: 'НУЖНО ВПИСАТЬ', achievement: 'НУЖНО ВПИСАТЬ' },
+      { title: 'НУЖНО ВПИСАТЬ', description: 'НУЖНО ВПИСАТЬ', year: 'НУЖНО ВПИСАТЬ', achievement: 'НУЖНО ВПИСАТЬ' }
+    ],
+    awards: ['НУЖНО ВПИСАТЬ', 'НУЖНО ВПИСАТЬ'],
+    requirements: ['НУЖНО ВПИСАТЬ', 'НУЖНО ВПИСАТЬ', 'НУЖНО ВПИСАТЬ'],
     contactLink: 'НУЖНО ВПИСАТЬ',
+    coachPhoto: 'НУЖНО ВПИСАТЬ',
+    banner: 'НУЖНО ВПИСАТЬ',
+    logo: 'НУЖНО ВПИСАТЬ',
     dayOfWeek: 'Среда, четверг',
     trainingTime: '16:55-18:30',
     location: 'СОК, Лиственничная аллея, 12б, Зал заседаний',
     category: 'individual-sports',
-    isFeatured: false
+    isFeatured: false,
+    gallery: ['НУЖНО ВПИСАТЬ', 'НУЖНО ВПИСАТЬ', 'НУЖНО ВПИСАТЬ']
   },
   {
     slug: 'esports',
